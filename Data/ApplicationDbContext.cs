@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MyApp.Models;
 
 namespace MyApp.Data
 {
@@ -12,5 +13,7 @@ namespace MyApp.Data
             : base(options)
         {
         }
+
+        public DbSet<Category> Categorys { get; set; }
     }
 }
